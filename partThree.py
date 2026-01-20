@@ -4,11 +4,12 @@ def main():
     charge = pounds * percent
     print(f"Charge £{charge:.2f}")
 
-
-def pounds_to_float(d):
-    # TODO
-
-def percent_to_float(p):
-    # TODO
+def pounds_to_float(pounds):
+    pounds=float(pounds.replace("£",""))
+    return pounds
+def percent_to_float(percent):
+    percent=int(percent.replace("%",""))
+    percent=float(percent/100)
+    return percent
 
 main()
