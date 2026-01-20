@@ -1,8 +1,8 @@
 def main():
     slow = input("Input ")
-    myFunction(slow)
+    organ(slow)
 
-def myFunction(text):
-  #Your code goes here.
-
+def organ(slow):
+  slow = slow.strip().replace(" ","a")
+  print(slow)
 main()
